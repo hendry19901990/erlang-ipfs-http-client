@@ -1,0 +1,15 @@
+{application, erlang-ipfs-api, [
+    {description, "Erlang Client Library of Ipfs."},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {applications, [kernel, stdlib]},
+    {mod, { ipfs, []}},
+    {maintainers, ["Hendry Rodriguez"]},
+    {links, [{"GitHub", "https://github.com/hendry19901990/erlang-ipfs-api"}]},
+    {files, [
+        "README.md",
+        "rebar.config",
+        "src",
+        "test"
+    ]}
+]}.
