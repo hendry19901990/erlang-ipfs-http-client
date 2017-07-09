@@ -6,8 +6,8 @@ Simply clone this repo.
 
 ## Quickstart
 
-```%% Add Enpoint /api/v0/add
- 
+```
+%% Add Enpoint /api/v0/add
 Method: ipf:add("ip-address", "port", "fullpathFile", "nameFile.extension").
 > ipf:add("127.0.0.1", "5001", "test.txt", "test.txt").
 {[{<<"Name">>,<<"test.txt">>},
