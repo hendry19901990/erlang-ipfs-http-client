@@ -44,7 +44,11 @@ add(IP, PORT, PathFile, FileName)->
 
 cat(IP, PORT, HASH) ->
   URL = "http://" ++ IP ++ ":" ++ PORT ++ "/api/v0/cat?arg=" ++ HASH,
-  request(get, {URL, []}).
+  inets:start(),
+    ssl:start(),
+    R = httpc:request(get, {URL, []}, [{ssl,[{verify,0}]}], []),
+    {_, {_, _, R1}} = R,
+    R1.
 
 
 ls(IP, PORT, HASH) ->
