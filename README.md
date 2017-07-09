@@ -49,7 +49,7 @@ MeThod: ipf:ls("ip-address", "port", "hash").
   {<<"CumulativeSize">>,2430611}]}
 ```
 
-## Quickstart
+## License
 
 The MIT License (MIT)
 
