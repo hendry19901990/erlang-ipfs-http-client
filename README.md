@@ -8,19 +8,19 @@ Simply clone this repo.
 
 ```
 %% Add Enpoint /api/v0/add
-Method: ipf:add("ip-address", "port", "fullpathFile", "nameFile.extension").
-> ipf:add("127.0.0.1", "5001", "test.txt", "test.txt").
+Method: ipfs:add("ip-address", "port", "fullpathFile", "nameFile.extension").
+> ipfs:add("127.0.0.1", "5001", "test.txt", "test.txt").
 {[{<<"Name">>,<<"test.txt">>},
   {<<"Hash">>,
    <<"QmYAVSgbjdw1hb96aFev6inrnqYntJLboeg8mumBvuamMe">>}]}
 
 %% Cat Enpoint /api/v0/cat
-MeThod: ipf:add("ip-address", "port", "hash").
+Method: ipfs:add("ip-address", "port", "hash").
 >  ipfs:cat("127.0.0.1", "5001", "QmYAVSgbjdw1hb96aFev6inrnqYntJLboeg8mumBvuamMe").
 "Hello World"
 
 %% Cat Enpoint /api/v0/ls
-MeThod: ipf:ls("ip-address", "port", "hash").
+Method: ipfs:ls("ip-address", "port", "hash").
 >  ipfs:ls("127.0.0.1", "5001", "QmaaqrHyAQm7gALkRW8DcfGX3u8q9rWKnxEMmf7m9z515w").
 {[{<<"Objects">>,
    [{[{<<"Hash">>,
@@ -38,7 +38,7 @@ MeThod: ipf:ls("ip-address", "port", "hash").
           {<<"Type">>,1}]}]}]}]}]}
           
 %% Size Enpoint /api/v0/size
-MeThod: ipf:ls("ip-address", "port", "hash").
+Method: ipfs:ls("ip-address", "port", "hash").
 >  ipfs:size("127.0.0.1", "5001", "QmaaqrHyAQm7gALkRW8DcfGX3u8q9rWKnxEMmf7m9z515w").   
 {[{<<"Hash">>,
    <<"QmaaqrHyAQm7gALkRW8DcfGX3u8q9rWKnxEMmf7m9z515w">>},
