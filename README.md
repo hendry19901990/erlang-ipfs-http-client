@@ -1,5 +1,7 @@
 # IPFS API wrapper library in Erlang
 
+![](https://ipfs.io/ipfs/QmQJ68PFMDdAsgCZvA1UVzzn18asVcf7HVvCDgpjiSCAse)
+
 ## Install
 
 Simply clone this repo.
